@@ -40,9 +40,9 @@
 
         width: 310px;
         height: 100%;
-        height: -moz-available;
-        height: -webkit-fill-available;
-        height:         fill-available;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
         margin: 0;
 
         transition: transform .3s linear;
@@ -135,6 +135,22 @@
     }
 
 
+    header .location
+    {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+
+    header .time
+    {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+
     header .search
     {
         position: absolute;
@@ -193,6 +209,39 @@
     header .menu .item + .item
     {
         margin-left: 0;
+    }
+
+
+    header .menu .item > a.sub_link
+    {
+        position: relative;
+
+        display: inline-block;
+
+        padding-right: 20px;
+
+        vertical-align: top;
+    }
+
+    header .menu .item > a.sub_link:after
+    {
+        position: absolute;
+        top: -4px;
+        right: 2px;
+        bottom: 0;
+
+        display: block;
+
+        width: 8px;
+        height: 8px;
+        margin: auto;
+
+        content: '';
+        transition: .2s linear;
+        transform: rotate(-45deg);
+
+        border-bottom: 1px solid #006f38;
+        border-left: 1px solid #006f38;
     }
 
 

@@ -1,29 +1,29 @@
 $(() => {
 	// Основной слайдер на главной
 	$('.main_slider .slider').owlCarousel({
-		items           : 1,
-		margin          : 20,
-		nav             : false,
-		dots            : false,
-		loop            : true,
-		smartSpeed      : 750,
-		autoplay        : true,
-		autoplayTimeout : 5000,
-		onTranslate : (event) => {
+		items: 1,
+		margin: 20,
+		nav: false,
+		dots: false,
+		loop: true,
+		smartSpeed: 750,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		onTranslate: (event) => {
 			$(event.target).trigger('stop.owl.autoplay')
 
-			const parent       = $(event.target).closest('.main_slider')
+			const parent = $(event.target).closest('.main_slider')
 			const currentIndex = event.item.index - event.relatedTarget._clones.length / 2
 
 			parent.find('.thumbs button').removeClass('active')
 			parent.find('.thumbs button:eq(' + currentIndex + ')').addClass('active')
 		},
-		onTranslated : (event) => {
+		onTranslated: (event) => {
 			$(event.target).trigger('play.owl.autoplay', [4250, 0])
 		}
 	})
 
-	$('.main_slider .thumbs button').click(function(e) {
+	$('.main_slider .thumbs button').click(function (e) {
 		e.preventDefault()
 
 		const parent = $(this).closest('.main_slider')
@@ -34,33 +34,33 @@ $(() => {
 
 	// Товары
 	$('.products .slider').owlCarousel({
-		loop       : true,
-		smartSpeed : 500,
-		nav        : true,
-		dots       : false,
-		navText    : ['<span></span>','<span></span>'],
-		responsive : {
-	        0:{
-	            items  : 2,
-				margin : 8
-	        },
-	        768:{
-	            items  : 3,
-				margin : 10
-	        },
-	        1024:{
-	            items  : 4,
-				margin : 8
-	        },
-	        1220:{
-				items  : 5,
-				margin : 15
-	        }
+		loop: true,
+		smartSpeed: 500,
+		nav: true,
+		dots: false,
+		navText: ['<span></span>', '<span></span>'],
+		responsive: {
+			0: {
+				items: 2,
+				margin: 8
+			},
+			768: {
+				items: 3,
+				margin: 10
+			},
+			1024: {
+				items: 4,
+				margin: 8
+			},
+			1220: {
+				items: 5,
+				margin: 15
+			}
 		},
-		onInitialized : (event) => {
+		onInitialized: (event) => {
 			setTimeout(() => { setHeight($(event.target).find('.product')) }, 100)
 		},
-		onResized : (event) => {
+		onResized: (event) => {
 			$(event.target).find('.product').height('auto')
 
 			setTimeout(() => { setHeight($(event.target).find('.product')) }, 100)
@@ -68,33 +68,33 @@ $(() => {
 	})
 
 	$('.products .views_slider').owlCarousel({
-		loop       : false,
-		smartSpeed : 500,
-		nav        : true,
-		dots       : false,
-		navText    : ['<span></span>','<span></span>'],
-		responsive : {
-	        0:{
-	            items  : 2,
-				margin : 8
-	        },
-	        768:{
-	            items  : 3,
-				margin : 10
-	        },
-	        1024:{
-	            items  : 4,
-				margin : 8
-	        },
-	        1220:{
-				items  : 5,
-				margin : 15
-	        }
+		loop: false,
+		smartSpeed: 500,
+		nav: true,
+		dots: false,
+		navText: ['<span></span>', '<span></span>'],
+		responsive: {
+			0: {
+				items: 2,
+				margin: 8
+			},
+			768: {
+				items: 3,
+				margin: 10
+			},
+			1024: {
+				items: 4,
+				margin: 8
+			},
+			1220: {
+				items: 5,
+				margin: 15
+			}
 		},
-		onInitialized : (event) => {
+		onInitialized: (event) => {
 			setTimeout(() => { setHeight($(event.target).find('.product')) }, 100)
 		},
-		onResized : (event) => {
+		onResized: (event) => {
 			$(event.target).find('.product').height('auto')
 
 			setTimeout(() => { setHeight($(event.target).find('.product')) }, 100)
@@ -102,33 +102,33 @@ $(() => {
 	})
 
 	$('.products .views_mini_slider').owlCarousel({
-		loop       : false,
-		smartSpeed : 500,
-		nav        : true,
-		dots       : false,
-		navText    : ['<span></span>','<span></span>'],
-		responsive : {
-	        0:{
-	            items  : 2,
-				margin : 8
-	        },
-	        768:{
-	            items  : 3,
-				margin : 10
-	        },
-	        1024:{
-	            items  : 3,
-				margin : 8
-	        },
-	        1220:{
-				items  : 4,
-				margin : 15
-	        }
+		loop: false,
+		smartSpeed: 500,
+		nav: true,
+		dots: false,
+		navText: ['<span></span>', '<span></span>'],
+		responsive: {
+			0: {
+				items: 2,
+				margin: 8
+			},
+			768: {
+				items: 3,
+				margin: 10
+			},
+			1024: {
+				items: 3,
+				margin: 8
+			},
+			1220: {
+				items: 4,
+				margin: 15
+			}
 		},
-		onInitialized : (event) => {
+		onInitialized: (event) => {
 			setTimeout(() => { setHeight($(event.target).find('.product')) }, 100)
 		},
-		onResized : (event) => {
+		onResized: (event) => {
 			$(event.target).find('.product').height('auto')
 
 			setTimeout(() => { setHeight($(event.target).find('.product')) }, 100)
@@ -138,33 +138,33 @@ $(() => {
 
 	// Новости
 	$('.articles .slider').owlCarousel({
-		loop       : true,
-		smartSpeed : 500,
-		nav        : true,
-		dots       : false,
-		navText    : ['<span></span>','<span></span>'],
-		responsive : {
-	        0:{
-	            items  : 2,
-				margin : 8
-	        },
-	        768:{
-	            items  : 3,
-				margin : 10
-	        },
-	        1024:{
-	            items  : 4,
-				margin : 8
-	        },
-	        1220:{
-				items  : 5,
-				margin : 15
-	        }
+		loop: true,
+		smartSpeed: 500,
+		nav: true,
+		dots: false,
+		navText: ['<span></span>', '<span></span>'],
+		responsive: {
+			0: {
+				items: 2,
+				margin: 8
+			},
+			768: {
+				items: 3,
+				margin: 10
+			},
+			1024: {
+				items: 4,
+				margin: 8
+			},
+			1220: {
+				items: 5,
+				margin: 15
+			}
 		},
-		onInitialized : (event) => {
+		onInitialized: (event) => {
 			setTimeout(() => { setHeight($(event.target).find('.article')) }, 100)
 		},
-		onResized : (event) => {
+		onResized: (event) => {
 			$(event.target).find('.article').height('auto')
 
 			setTimeout(() => { setHeight($(event.target).find('.article')) }, 100)
@@ -174,33 +174,33 @@ $(() => {
 
 	// Примеры готовой продукции
 	$('.products_examples .slider').owlCarousel({
-		loop       : false,
-		smartSpeed : 500,
-		nav        : true,
-		dots       : false,
-		navText    : ['<span></span>','<span></span>'],
-		responsive : {
-	        0:{
-	            items  : 2,
-				margin : 8
-	        },
-	        768:{
-	            items  : 3,
-				margin : 10
-	        },
-	        1024:{
-	            items  : 4,
-				margin : 8
-	        },
-	        1220:{
-				items  : 5,
-				margin : 15
-	        }
+		loop: false,
+		smartSpeed: 500,
+		nav: true,
+		dots: false,
+		navText: ['<span></span>', '<span></span>'],
+		responsive: {
+			0: {
+				items: 2,
+				margin: 8
+			},
+			768: {
+				items: 3,
+				margin: 10
+			},
+			1024: {
+				items: 4,
+				margin: 8
+			},
+			1220: {
+				items: 5,
+				margin: 15
+			}
 		},
-		onInitialized : (event) => {
+		onInitialized: (event) => {
 			setTimeout(() => { setHeight($(event.target).find('.item')) }, 100)
 		},
-		onResized : (event) => {
+		onResized: (event) => {
 			$(event.target).find('.item').height('auto')
 
 			setTimeout(() => { setHeight($(event.target).find('.item')) }, 100)
@@ -209,21 +209,21 @@ $(() => {
 
 
 	// Боковая колонка
-	$('aside .cats .main_cat .arr').click(function(e) {
-    	e.preventDefault()
+	$('aside .cats .main_cat .arr').click(function (e) {
+		e.preventDefault()
 
-    	let parent = $(this).closest('.main_cat')
+		let parent = $(this).closest('.main_cat')
 
-    	parent.hasClass('active')
+		parent.hasClass('active')
 			? parent.removeClass('active').next().slideUp(300)
 			: parent.addClass('active').next().slideDown(300)
 	})
 
 
-	$('aside .mob_cats_btn').click(function(e) {
-    	e.preventDefault()
+	$('aside .mob_cats_btn').click(function (e) {
+		e.preventDefault()
 
-    	if( $(this).hasClass('active') ) {
+		if ($(this).hasClass('active')) {
 			$(this).removeClass('active').next().slideUp(300)
 		} else {
 			$(this).addClass('active').next().slideDown(300)
@@ -232,7 +232,7 @@ $(() => {
 
 
 	// Категория - список подкатегорий
-	$('.sub_categories .spoler_btn').click(function(e) {
+	$('.sub_categories .spoler_btn').click(function (e) {
 		e.preventDefault()
 
 		const $parent = $(this).closest('.sub_categories')
@@ -248,38 +248,38 @@ $(() => {
 
 
 	// Удаление товара с корзины
-	$('.cart_info table td.delete button').click(function(e){
+	$('.cart_info table td.delete button').click(function (e) {
 		e.preventDefault()
 
 		$(this).closest('tr').remove()
 		updateCartPrice()
 
-		if( !$('.cart_info table tbody tr').length ) {
+		if (!$('.cart_info table tbody tr').length) {
 			// В корзине не осталось товаров
 		}
 	})
 
 
 	// Оформление заказа
-	$('.checkout .form .type label').click(function(){
+	$('.checkout .form .type label').click(function () {
 		let typeContent = $(this).data('content')
 
 		$('.checkout .form .type_content').hide()
-		$('.checkout .form '+ typeContent).fadeIn(300)
+		$('.checkout .form ' + typeContent).fadeIn(300)
 	})
 
 
 	// Отправка форм
-	$('body').on('submit', '.form.custom_submit', function(e) {
+	$('body').on('submit', '.form.custom_submit', function (e) {
 		e.preventDefault()
 
 		$.fancybox.close()
 
 		$.fancybox.open({
-			src       : '#success_modal',
-			type      : 'inline',
-			touch     : false,
-			afterShow : ( instance, current ) => {
+			src: '#success_modal',
+			type: 'inline',
+			touch: false,
+			afterShow: (instance, current) => {
 				setTimeout(() => { $.fancybox.close() }, 2000)
 			}
 		})
@@ -290,8 +290,8 @@ $(() => {
 
 $(window).on('load', () => {
 	// Фикс. шапка
-	headerInit   = true,
-	headerHeight = $('header').outerHeight()
+	headerInit = true,
+		headerHeight = $('header').outerHeight()
 
 	$('header').wrap('<div class="header_wrap"></div>')
 	$('.header_wrap').height(headerHeight)
@@ -309,7 +309,7 @@ $(window).resize(() => {
 	$('.header_wrap').height('auto')
 
 	setTimeout(() => {
-		headerInit   = true
+		headerInit = true
 		headerHeight = $('header').outerHeight()
 
 		$('.header_wrap').height(headerHeight)

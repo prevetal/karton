@@ -717,6 +717,19 @@ header .phones a
 
 
 
+header .col_right
+{
+    display: flex;
+
+    width: calc(100% - 450px);
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
 header .callback_btn
 {
     color: #006f38;
@@ -777,6 +790,32 @@ header .feedback_btn:hover
     color: #004619;
 
     background-position: 0 -40px;
+}
+
+
+
+header .location
+{
+    color: #4a4a4a;
+    font-size: 13px;
+    line-height: 20px;
+
+    padding-left: 25px;
+
+    background: url(../images/ic_footer_adres.png) 0 0 no-repeat;
+}
+
+
+
+header .time
+{
+    color: #4a4a4a;
+    font-size: 13px;
+    line-height: 20px;
+
+    padding-left: 30px;
+
+    background: url(../images/ic_time.png) 0 0 no-repeat;
 }
 
 
@@ -1459,7 +1498,6 @@ aside .mob_cats_btn
     line-height: 44px;
 
     display: none;
-    display: block;
 
     width: 100%;
     height: 44px;

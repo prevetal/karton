@@ -13,9 +13,9 @@ $(() => {
 	// Ленивая загрузка
 	setTimeout(() => {
 		observer = lozad('.lozad', {
-			rootMargin : '200px 0px',
-			threshold  : 0,
-			loaded     : (el) => el.classList.add('loaded')
+			rootMargin: '200px 0px',
+			threshold: 0,
+			loaded: (el) => el.classList.add('loaded')
 		})
 
 		observer.observe()
@@ -38,58 +38,58 @@ $(() => {
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
 
 	// Фокус при клике на название поля
-	$('body').on('click', '.form .label', function() {
+	$('body').on('click', '.form .label', function () {
 		$(this).closest('.line').find('.input, textarea').focus()
 	})
 
 
 	// Fancybox
-	$.fancybox.defaults.hash             = false
-	$.fancybox.defaults.backFocus        = false
-	$.fancybox.defaults.autoFocus        = false
-	$.fancybox.defaults.animationEffect  = 'zoom'
+	$.fancybox.defaults.hash = false
+	$.fancybox.defaults.backFocus = false
+	$.fancybox.defaults.autoFocus = false
+	$.fancybox.defaults.animationEffect = 'zoom'
 	$.fancybox.defaults.transitionEffect = 'slide'
-	$.fancybox.defaults.speed            = 500
-	$.fancybox.defaults.gutter           = 40
-	$.fancybox.defaults.i18n             = {
+	$.fancybox.defaults.speed = 500
+	$.fancybox.defaults.gutter = 40
+	$.fancybox.defaults.i18n = {
 		'en': {
-			CLOSE       : "Закрыть",
-			NEXT        : "Следующий",
-			PREV        : "Предыдущий",
-			ERROR       : "Запрошенный контент не может быть загружен.<br /> Пожалуйста, повторите попытку позже.",
-			PLAY_START  : "Запустить слайдшоу",
-			PLAY_STOP   : "Остановить слайдшоу",
-			FULL_SCREEN : "На весь экран",
-			THUMBS      : "Миниатюры",
-			DOWNLOAD    : "Скачать",
-			SHARE       : "Поделиться",
-			ZOOM        : "Увеличить"
+			CLOSE: "Закрыть",
+			NEXT: "Следующий",
+			PREV: "Предыдущий",
+			ERROR: "Запрошенный контент не может быть загружен.<br /> Пожалуйста, повторите попытку позже.",
+			PLAY_START: "Запустить слайдшоу",
+			PLAY_STOP: "Остановить слайдшоу",
+			FULL_SCREEN: "На весь экран",
+			THUMBS: "Миниатюры",
+			DOWNLOAD: "Скачать",
+			SHARE: "Поделиться",
+			ZOOM: "Увеличить"
 		}
 	}
 
 	// Всплывающие окна
-	$('body').on('click', '.modal_link', function(e) {
+	$('body').on('click', '.modal_link', function (e) {
 		e.preventDefault()
 
 		$.fancybox.close(true)
 
 		$.fancybox.open({
-			src   : $(this).data('content'),
-			type  : 'inline',
-			touch : false
+			src: $(this).data('content'),
+			type: 'inline',
+			touch: false
 		})
 	})
 
 	// Увеличение картинки
 	$('.fancy_img').fancybox({
-		mobile : {
-			clickSlide : "close"
+		mobile: {
+			clickSlide: "close"
 		}
 	})
 
 
 	// Мини всплывающие окна
-	$('.mini_modal_link').click(function(e) {
+	$('.mini_modal_link').click(function (e) {
 		e.preventDefault()
 
 		const modalId = $(this).data('modal-id')
@@ -121,45 +121,45 @@ $(() => {
 
 
 	// Изменение количества товара
-	$('body').on('click', '.amount .minus', function(e) {
+	$('body').on('click', '.amount .minus', function (e) {
 		e.preventDefault()
 
-		const $parent  = $(this).closest('.amount'),
-			  $input   = $parent.find('.input'),
-			  inputVal = parseFloat($input.val()),
-			  minimum  = parseFloat($input.data('minimum')),
-			  step     = parseFloat($input.data('step')),
-			  unit     = $input.data('unit')
+		const $parent = $(this).closest('.amount'),
+			$input = $parent.find('.input'),
+			inputVal = parseFloat($input.val()),
+			minimum = parseFloat($input.data('minimum')),
+			step = parseFloat($input.data('step')),
+			unit = $input.data('unit')
 
 		if (inputVal > minimum) $input.val(inputVal - step + unit)
 
-	    if( $(this).hasClass('update_price') ) updateCartPrice( $(this).parents('tr') )
+		if ($(this).hasClass('update_price')) updateCartPrice($(this).parents('tr'))
 	})
 
-	$('body').on('click', '.amount .plus', function(e) {
+	$('body').on('click', '.amount .plus', function (e) {
 		e.preventDefault()
 
-		const $parent  = $(this).closest('.amount'),
-			  $input   = $parent.find('.input'),
-			  inputVal = parseFloat($input.val()),
-			  maximum  = parseFloat($input.data('maximum')),
-			  step     = parseFloat($input.data('step')),
-			  unit     = $input.data('unit')
+		const $parent = $(this).closest('.amount'),
+			$input = $parent.find('.input'),
+			inputVal = parseFloat($input.val()),
+			maximum = parseFloat($input.data('maximum')),
+			step = parseFloat($input.data('step')),
+			unit = $input.data('unit')
 
 		if (inputVal < maximum) $input.val(inputVal + step + unit)
 
-	    if( $(this).hasClass('update_price') ) updateCartPrice( $(this).parents('tr') )
+		if ($(this).hasClass('update_price')) updateCartPrice($(this).parents('tr'))
 	})
 
-	$('.amount .input').keydown(function() {
-		const _self   = $(this),
-			  maximum = parseInt(_self.data('maximum'))
+	$('.amount .input').keydown(function () {
+		const _self = $(this),
+			maximum = parseInt(_self.data('maximum'))
 
 		setTimeout(() => {
-			if(_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
-			if(_self.val() > maximum) _self.val(maximum)
+			if (_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
+			if (_self.val() > maximum) _self.val(maximum)
 
-			if( _self.hasClass('update_price') ) updateCartPrice( _self.parents('tr') )
+			if (_self.hasClass('update_price')) updateCartPrice(_self.parents('tr'))
 		})
 	})
 
@@ -191,14 +191,16 @@ $(() => {
 	if (is_touch_device()) {
 		$('header .menu .item > a.sub_link').addClass('touch_link')
 
-		$('header .menu .item > a.sub_link').click(function(e) {
+		$('header .menu .item > a.sub_link').click(function (e) {
+			e.preventDefault()
+
 			const $dropdown = $(this).next()
 
 			if ($dropdown.css('visibility') === 'hidden') {
-				e.preventDefault()
-
 				$('header .menu .sub_menu').removeClass('show')
 				$dropdown.addClass('show')
+			} else {
+				$dropdown.removeClass('show')
 			}
 		})
 
@@ -246,28 +248,28 @@ $(window).resize(() => {
 
 // Вспомогательные функции
 const updateCartPrice = context => {
-	if( context ){
-		let price      = parseFloat(context.find('.price:not(.total)').data('price'))
-			amount     = parseInt(context.find('.amount .input').val())
-			totalPrice = price*amount
+	if (context) {
+		let price = parseFloat(context.find('.price:not(.total)').data('price'))
+		amount = parseInt(context.find('.amount .input').val())
+		totalPrice = price * amount
 
-		context.find('.price.total span').text( totalPrice.toLocaleString() )
+		context.find('.price.total span').text(totalPrice.toLocaleString())
 	}
 
 	let totalCartPrice = 0
 
-	$('.cart_info table td.price.total span').each(function(){
-		totalCartPrice = (totalCartPrice + parseFloat( $(this).text().replace(/\s+/g, '') ))
+	$('.cart_info table td.price.total span').each(function () {
+		totalCartPrice = (totalCartPrice + parseFloat($(this).text().replace(/\s+/g, '')))
 	})
 
-	$('.cart_info .cart_total .val span, .checkout_total .val span').text( totalCartPrice.toLocaleString() )
+	$('.cart_info .cart_total .val span, .checkout_total .val span').text(totalCartPrice.toLocaleString())
 }
 
 
 const setHeight = className => {
 	let maxheight = 0
 
-	className.each(function() {
+	className.each(function () {
 		const elHeight = $(this).outerHeight()
 
 		if (elHeight > maxheight) maxheight = elHeight
@@ -283,9 +285,9 @@ const is_touch_device = () => !!('ontouchstart' in window)
 const widthScroll = () => {
 	let div = document.createElement('div')
 
-	div.style.overflowY  = 'scroll'
-	div.style.width      = '50px'
-	div.style.height     = '50px'
+	div.style.overflowY = 'scroll'
+	div.style.width = '50px'
+	div.style.height = '50px'
 	div.style.visibility = 'hidden'
 
 	document.body.appendChild(div)

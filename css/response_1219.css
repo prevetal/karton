@@ -75,6 +75,12 @@
 
 
 
+    header .col_right
+    {
+        width: 100%;
+    }
+
+
     header .callback_btn,
     header .order_btn,
     header .feedback_btn
@@ -95,13 +101,21 @@
 
 
 
+    header .time
+    {
+        margin-right: auto;
+        margin-left: 42px;
+    }
+
+
+
     header .search
     {
         position: absolute;
         right: 20px;
 
         width: 230px;
-        margin-top: -55px;
+        margin-top: -96px;
     }
 
 
