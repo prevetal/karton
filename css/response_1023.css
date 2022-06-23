@@ -286,12 +286,20 @@
     }
 
 
-    aside .mob_cats_btn
+    aside .mob_cats_btn,
+    aside .mob_filter_btn
     {
         display: block;
     }
 
-    aside .cats
+    aside .mob_filter_btn
+    {
+        margin-top: 12px;
+    }
+
+
+    aside .cats,
+    aside .filter
     {
         display: none;
 

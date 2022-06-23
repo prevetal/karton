@@ -220,7 +220,7 @@ $(() => {
 	})
 
 
-	$('aside .mob_cats_btn').click(function (e) {
+	$('aside .mob_cats_btn, aside .mob_filter_btn').click(function (e) {
 		e.preventDefault()
 
 		if ($(this).hasClass('active')) {
@@ -283,6 +283,98 @@ $(() => {
 				setTimeout(() => { $.fancybox.close() }, 2000)
 			}
 		})
+	})
+
+
+	// Фильтр
+	$('.filter .name').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
+	})
+
+
+	$priceRange = $('.filter #price_range').ionRangeSlider({
+		type: 'double',
+		min: 0,
+		max: 1500,
+		from: 100,
+		to: 1000,
+		step: 10,
+		onChange: data => {
+			$('.filter .price_range input.from').val(data.from)
+			$('.filter .price_range input.to').val(data.to)
+		},
+		onUpdate: data => {
+			$('.filter .price_range input.from').val(data.from)
+			$('.filter .price_range input.to').val(data.to)
+		}
+	}).data("ionRangeSlider")
+
+	$('.filter .price_range .input').keyup(function () {
+		$priceRange.update({
+			from: parseFloat($('.filter .price_range input.from').val()),
+			to: parseFloat($('.filter .price_range input.to').val())
+		})
+	})
+
+
+	$lengthRange = $('.filter #length_range').ionRangeSlider({
+		type: 'double',
+		min: 0,
+		max: 1500,
+		from: 100,
+		to: 1000,
+		step: 10,
+		onChange: data => {
+			$('.filter .length_range input.from').val(data.from)
+			$('.filter .length_range input.to').val(data.to)
+		},
+		onUpdate: data => {
+			$('.filter .length_range input.from').val(data.from)
+			$('.filter .length_range input.to').val(data.to)
+		}
+	}).data("ionRangeSlider")
+
+	$('.filter .length_range .input').keyup(function () {
+		$lengthRange.update({
+			from: parseFloat($('.filter .length_range input.from').val()),
+			to: parseFloat($('.filter .length_range input.to').val())
+		})
+	})
+
+
+	$widthRange = $('.filter #width_range').ionRangeSlider({
+		type: 'double',
+		min: 0,
+		max: 1500,
+		from: 100,
+		to: 1000,
+		step: 10,
+		onChange: data => {
+			$('.filter .width_range input.from').val(data.from)
+			$('.filter .width_range input.to').val(data.to)
+		},
+		onUpdate: data => {
+			$('.filter .width_range input.from').val(data.from)
+			$('.filter .width_range input.to').val(data.to)
+		}
+	}).data("ionRangeSlider")
+
+	$('.filter .width_range .input').keyup(function () {
+		$widthRange.update({
+			from: parseFloat($('.filter .width_range input.from').val()),
+			to: parseFloat($('.filter .width_range input.to').val())
+		})
+	})
+
+
+	$('.filter .reset_btn').click(function () {
+		$('.filter input').removeAttr('checked')
+
+		$priceRange.reset()
+		$lengthRange.reset()
+		$widthRange.reset()
 	})
 })
 

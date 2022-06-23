@@ -27,6 +27,7 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1219.css" media="(max-width: 1219px)">
@@ -364,6 +365,129 @@
 								<div class="cat">
 									<a href="/" class="main_cat">Печать на коробках</a>
 								</div>
+							</div>
+
+
+							<button class="mob_filter_btn">Фильтр</button>
+
+							<div class="filter">
+								<form action="" class="form">
+									<div class="item">
+										<div class="name active">
+											<span>Цена (руб.)</span>
+											<img src="images/ic_arr_hor.svg" alt="" class="arr">
+										</div>
+
+										<div class="data range price_range" style="display: block;">
+											<div class="row">
+												<input type="text" name="" value="100" class="input from">
+
+												<div class="sep"></div>
+
+												<input type="text" name="" value="1000" class="input to">
+											</div>
+
+											<input type="hidden" id="price_range" name="price_range" value="">
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="name active">
+											<span>Длина, мм</span>
+											<img src="images/ic_arr_hor.svg" alt="" class="arr">
+										</div>
+
+										<div class="data range length_range" style="display: block;">
+											<div class="row">
+												<input type="text" name="" value="100" class="input from">
+
+												<div class="sep"></div>
+
+												<input type="text" name="" value="1000" class="input to">
+											</div>
+
+											<input type="hidden" id="length_range" name="length_range" value="">
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="name active">
+											<span>Ширина, мм</span>
+											<img src="images/ic_arr_hor.svg" alt="" class="arr">
+										</div>
+
+										<div class="data range width_range" style="display: block;">
+											<div class="row">
+												<input type="text" name="" value="100" class="input from">
+
+												<div class="sep"></div>
+
+												<input type="text" name="" value="1000" class="input to">
+											</div>
+
+											<input type="hidden" id="width_range" name="width_range" value="">
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="name active">
+											<span>Материал</span>
+											<img src="images/ic_arr_hor.svg" alt="" class="arr">
+										</div>
+
+										<div class="data" style="display: block;">
+											<div class="field">
+												<label>
+													<input type="checkbox" name="">
+													<div class="check"></div>
+													<div>Картон</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label>
+													<input type="checkbox" name="">
+													<div class="check"></div>
+													<div>Гофрокартон</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label>
+													<input type="checkbox" name="">
+													<div class="check"></div>
+													<div>Микрогофрокартон</div>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="data" style="display: block;">
+											<div class="field">
+												<label>
+													<input type="checkbox" name="">
+													<div class="check"></div>
+													<div>В наличии</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label>
+													<input type="checkbox" name="">
+													<div class="check"></div>
+													<div>Под заказ</div>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="submit">
+										<button type="submit" class="submit_btn">ПРИМЕНИТЬ</button>
+
+										<button type="reset" class="reset_btn">Сбросить фильтр</button>
+									</div>
+								</form>
 							</div>
 						</aside>
 
@@ -983,6 +1107,7 @@
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/fancybox.min.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>

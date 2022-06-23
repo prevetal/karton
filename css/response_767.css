@@ -72,7 +72,8 @@
     /*-------------
         Sidebar
     -------------*/
-    aside .mob_cats_btn
+    aside .mob_cats_btn,
+    aside .mob_filter_btn
     {
         line-height: 40px;
 
