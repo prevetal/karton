@@ -486,6 +486,29 @@
 
 
 
+    /*---------------
+        Vacancies
+    ---------------*/
+    .vacancies .vacancy
+    {
+        padding: 20px;
+    }
+
+
+    .vacancies .vacancy .name
+    {
+        font-size: 18px;
+    }
+
+
+    .vacancies .vacancy .btn
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -566,5 +589,20 @@
     .modal
     {
         padding: 30px;
+    }
+
+
+
+    #resume_modal
+    {
+        padding: 40px 32px;
+    }
+
+
+    #resume_modal .modal_title
+    {
+        font-size: 22px;
+
+        margin-bottom: 20px;
     }
 }

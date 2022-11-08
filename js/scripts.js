@@ -376,6 +376,12 @@ $(() => {
 		$lengthRange.reset()
 		$widthRange.reset()
 	})
+
+
+	// Выбор файла
+	$('body').on('change', '.form input[type=file]', function (e) {
+		$(this).closest('.file').find('label .path').text($(this).val())
+	})
 })
 
 

@@ -2204,6 +2204,43 @@ aside .filter .reset_btn
 }
 
 
+.form .file label
+{
+    color: #00440c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+
+    display: block;
+
+    padding: 9px 20px 10px;
+
+    cursor: pointer;
+    text-align: center;
+
+    background: #f7f7f7;
+}
+
+.form .file label input
+{
+    display: none;
+}
+
+.form .file label .path
+{
+    display: inline-block;
+    overflow: hidden;
+
+    max-width: 100%;
+
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border-bottom: 1px dashed #00440c;
+}
+
+
 .form .submit
 {
     display: flex;
@@ -2656,6 +2693,16 @@ aside .filter .reset_btn
 /*----------------
     Advantages
 ----------------*/
+.advantages .block_title
+{
+    color: #000;
+    font-size: 25px;
+    line-height: 31px;
+
+    margin-bottom: 20px;
+}
+
+
 .advantages .data
 {
     padding: 25px;
@@ -4408,6 +4455,133 @@ aside .filter .reset_btn
 
 
 
+/*---------------
+    Vacancies
+---------------*/
+.vacancies .row
+{
+    margin-bottom: -30px;
+    margin-left: -30px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.vacancies .row > *
+{
+    width: calc(33.333% - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+.vacancies .vacancy
+{
+    padding: 24px 30px 20px;
+
+    background: #f6f6f6;
+}
+
+
+.vacancies .vacancy .name
+{
+    color: #00440c;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 22px;
+
+    margin-bottom: 13px;
+    padding-bottom: 14px;
+
+    border-bottom: 1px dashed #00440c;
+}
+
+
+.vacancies .vacancy .details + .features
+{
+    margin-top: 17px;
+}
+
+
+.vacancies .vacancy .features > *
+{
+    color: #808080;
+    font-size: 15px;
+    line-height: 22px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.vacancies .vacancy .features > * + *
+{
+    margin-top: 15px;
+}
+
+
+.vacancies .vacancy .features .val
+{
+    color: #292929;
+    font-weight: 700;
+
+    margin-left: 20px;
+
+    text-align: right;
+}
+
+
+.vacancies .vacancy .details
+{
+    color: #00440c;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+
+    margin-top: 28px;
+}
+
+.vacancies .vacancy .details a
+{
+    color: currentColor;
+
+    padding-bottom: 3px;
+
+    text-decoration: none;
+
+    border-bottom: 1px dashed #00440c;
+}
+
+
+.vacancies .vacancy .btn
+{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+
+    display: block;
+
+    width: 100%;
+    margin-top: 22px;
+    padding: 16px;
+
+    transition: background .2s linear;
+    text-transform: uppercase;
+
+    background: #00440c;
+}
+
+.vacancies .vacancy .btn:hover
+{
+    background: #006f38;
+}
+
+
+
 /*------------
     Footer
 ------------*/
@@ -4657,6 +4831,7 @@ footer .map
     background: #fff;
 }
 
+
 .modal_title
 {
     color: #000;
@@ -4664,4 +4839,36 @@ footer .map
     font-weight: 700;
 
     margin-bottom: 20px;
+}
+
+
+
+#resume_modal
+{
+    width: 500px;
+    padding: 48px 96px;
+}
+
+
+#resume_modal .modal_title
+{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 100%;
+
+    margin-bottom: 26px;
+
+    text-align: center;
+}
+
+
+#resume_modal .form .line
+{
+    margin-bottom: 12px;
+}
+
+#resume_modal .form .label
+{
+    font-size: 14px;
+    line-height: 22px;
 }
