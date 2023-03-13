@@ -36,6 +36,30 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .tabs button
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        padding-bottom: 12px;
+    }
+
+    .tabs button + button
+    {
+        margin-left: 60px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -160,12 +184,6 @@
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
     /*---------------
         Page head
     ---------------*/
@@ -173,18 +191,6 @@
     {
         line-height: calc(var(--font_size_title) + 4px);
     }
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
-    /*------------------
-        Form elements
-    ------------------*/
 
 
 
@@ -339,11 +345,46 @@
         width: calc(100% - 379px);
     }
 
+
     .product_info .info .row
     {
-        padding: 25px;
+        padding: 32px 24px;
     }
 
+
+    .product_info .info .payment
+    {
+        margin-top: 40px;
+    }
+
+    .product_info .info .payment .icon
+    {
+        margin-right: 12px;
+    }
+
+
+    .product_info .info .buy .price
+    {
+        font-size: 20px;
+    }
+
+    .product_info .info .buy .price.total
+    {
+        font-size: 24px;
+    }
+
+
+    .product_info .info .btns .btn
+    {
+        font-size: 13px;
+    }
+
+
+    .product_info .info .buy .buy_btn,
+    .product_info .info .quike_buy_btn
+    {
+        width: 152px;
+    }
 
 
 

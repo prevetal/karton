@@ -17,6 +17,28 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .tabs button
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .tabs button + button
+    {
+        margin-left: 48px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -308,12 +330,6 @@
 
 
 
-    /*---------------
-        Page head
-    ---------------*/
-
-
-
     /*----------------
         Block head
     ----------------*/
@@ -446,31 +462,120 @@
         width: calc(100% - 319px);
     }
 
+
     .product_info .info .row
     {
-        padding: 20px;
+        padding: 24px;
     }
 
 
-    .product_info .info .size,
-    .product_info .info .material,
-    .product_info .info .price,
-    .product_info .info .amount
+    .product_info .info .size_price .from,
+    .product_info .info .size_price .to
     {
-        width: calc(50% - 10px);
+        font-size: 16px;
+        line-height: 22px;
     }
 
-    .product_info .info .description,
-    .product_info .info .buy
+
+    .product_info .info .delivery
     {
         width: 100%;
-        padding: 0;
+        margin-top: 24px;
+        margin-left: 0;
     }
 
-    .product_info .info * + .description,
-    .product_info .info * + .buy
+    .product_info .info .delivery > * + *
     {
-        margin-top: 20px;
+        margin-top: 12px;
+    }
+
+
+    .product_info .info .payment
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        margin-top: 24px;
+        margin-bottom: -20px;
+        margin-left: -24px;
+    }
+
+    .product_info .info .payment > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 20px;
+        margin-left: 24px;
+    }
+
+
+    .product_info .info .payment .icon
+    {
+        display: flex;
+
+        width: 32px;
+        height: 32px;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .product_info .info .payment .icon + *
+    {
+        width: calc(100% - 44px);
+    }
+
+
+    .product_info .info .payment br
+    {
+        display: none;
+    }
+
+
+    .product_info .info .buy .label
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .product_info .info .buy .price
+    {
+        font-size: 19px;
+    }
+
+    .product_info .info .buy .price.total
+    {
+        font-size: 22px;
+    }
+
+
+    .product_info .info .buy .buy_btn,
+    .product_info .info .quike_buy_btn
+    {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+
+    .product_info .info .btns .btn
+    {
+        font-size: 12px;
+    }
+
+
+
+    .product_features
+    {
+        margin-left: -60px;
+    }
+
+    .product_features > .col
+    {
+        margin-left: 60px;
     }
 
 

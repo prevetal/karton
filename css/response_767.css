@@ -10,6 +10,58 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 0 -20px 20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .tabs button
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .tabs button + button
+    {
+        margin-left: 36px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -310,20 +362,40 @@
     /*------------------
         Product info
     ------------------*/
+    .product_info .articul
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        padding: 4px 12px 5px;
+    }
+
+
     .product_info .image
     {
         width: 100%;
+        min-height: 340px;
     }
+
 
     .product_info .image a
     {
-        height: 320px;
+        padding: 20px;
     }
 
-    .product_info .image a:after
+    .product_info .image a:after,
+    .product_info .image a:hover:after,
+    .product_info .image a:active:after
     {
+        right: 20px;
         bottom: 20px;
-        left: 20px;
+        left: auto;
+
+        width: 24px;
+        height: 24px;
+
+        background-position: 0 0;
+        background-size: 300% 100%;
     }
 
 
@@ -332,6 +404,21 @@
         width: 100%;
         margin-top: -1px;
         margin-left: 0;
+    }
+
+
+
+    .product_features
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .product_features > .col
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
     }
 
 

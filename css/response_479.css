@@ -413,9 +413,36 @@
     /*------------------
         Product info
     ------------------*/
-    .product_info .image a
+    .product_info .info .row
     {
-        height: 280px;
+        padding: 20px;
+    }
+
+
+    .product_info .info .buy .price.total
+    {
+        line-height: 100%;
+
+        width: 100%;
+        margin-top: 12px;
+    }
+
+
+    .product_info .info .btns .btn
+    {
+        width: 100%;
+    }
+
+    .product_info .info .btns .btn + .btn
+    {
+        margin-top: 10px;
+    }
+
+
+    .product_info .info .buy .buy_btn,
+    .product_info .info .quike_buy_btn
+    {
+        margin-top: 20px;
     }
 
 
