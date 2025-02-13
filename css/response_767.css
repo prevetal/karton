@@ -793,8 +793,44 @@
     /*-----------
         PopUp
     -----------*/
-    .fancybox-slide--html
+    #whatsapp_modal
     {
-        padding: 20px;
+        padding: 40px 32px;
+    }
+
+
+    #whatsapp_modal .logo
+    {
+        margin-bottom: 24px;
+    }
+
+
+    #whatsapp_modal .logo img
+    {
+        width: 120px;
+    }
+
+
+    #whatsapp_modal .modal_title
+    {
+        font-size: 22px;
+
+        margin-bottom: 20px;
+    }
+
+
+    #whatsapp_modal .label
+    {
+        font-size: 14px;
+
+        margin-bottom: 16px;
+    }
+
+
+    #whatsapp_modal .whatsapp_link a,
+    #whatsapp_modal .qr_code img
+    {
+        width: 160px;
+        height: 160px;
     }
 }

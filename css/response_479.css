@@ -673,4 +673,59 @@
 
         margin-bottom: 20px;
     }
+
+
+
+    #whatsapp_modal
+    {
+        padding: 40px;
+    }
+
+
+    #whatsapp_modal .logo
+    {
+        margin-bottom: 20px;
+    }
+
+
+    #whatsapp_modal .logo img
+    {
+        width: 108px;
+    }
+
+
+    #whatsapp_modal .modal_title
+    {
+        font-size: 20px;
+    }
+
+
+    #whatsapp_modal .label
+    {
+        text-align: center;
+    }
+
+
+    #whatsapp_modal .row
+    {
+        flex-direction: column;
+
+        gap: 32px;
+    }
+
+
+    #whatsapp_modal .whatsapp_link,
+    #whatsapp_modal .qr_code
+    {
+        width: 100%;
+    }
+
+
+    #whatsapp_modal .whatsapp_link a,
+    #whatsapp_modal .qr_code img
+    {
+        width: 187px;
+        height: 187px;
+        margin: 0 auto;
+    }
 }

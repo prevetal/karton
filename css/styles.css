@@ -5317,6 +5317,122 @@ aside .filter .reset_btn
 
 
 
+/*------------------
+    Whatsapp btn
+------------------*/
+.whatsapp_btn
+{
+    font-size: 14px;
+    font-weight: 700;
+
+    position: fixed;
+    z-index: 90;
+    bottom: 26px;
+    left: 50%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-left: -780px;
+    padding: 3px 3px 3px 33px;
+
+    transition: color .2s linear;
+    text-align: center;
+
+    color: #025319;
+    border-radius: 28px;
+    background: #fff;
+
+    gap: 9px;
+}
+
+
+.whatsapp_btn:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    left: 5px;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    pointer-events: none;
+
+    border-radius: inherit;
+    background: rgba(190, 227, 208, .70);
+}
+
+
+.whatsapp_btn:after
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: background .2s linear;
+    pointer-events: none;
+
+    border: 2px solid #025319;
+    border-radius: inherit;
+}
+
+
+.whatsapp_btn > *
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.whatsapp_btn img
+{
+    display: block;
+
+    width: 50px;
+    height: 50px;
+}
+
+
+.whatsapp_btn:hover
+{
+    color: #fff;
+}
+
+
+.whatsapp_btn:hover:after
+{
+    background: #025319;
+}
+
+
+
+@media (max-width: 1599px)
+{
+    .whatsapp_btn
+    {
+        bottom: 20px;
+        left: 0;
+
+        margin-left: 20px;
+    }
+}
+
+
+
 /*------------
     Footer
 ------------*/
@@ -5609,4 +5725,173 @@ footer .map
 {
     font-size: 14px;
     line-height: 22px;
+}
+
+
+
+#whatsapp_modal
+{
+    width: 492px;
+    padding: 42px;
+}
+
+
+#whatsapp_modal .logo
+{
+    margin-bottom: 28px;
+}
+
+
+#whatsapp_modal .logo img
+{
+    display: block;
+
+    width: 130px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+#whatsapp_modal .modal_title
+{
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 22px;
+
+    text-align: center;
+}
+
+
+#whatsapp_modal .row
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#whatsapp_modal .label
+{
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-bottom: 22px;
+
+    color: #000;
+}
+
+
+#whatsapp_modal .whatsapp_link a
+{
+    font-size: 14px;
+    font-weight: 700;
+
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 187px;
+    max-width: 100%;
+    height: 187px;
+    padding: 20px;
+
+    transition: color .2s linear;
+    text-align: center;
+    text-decoration: none;
+
+    color: #025319;
+
+    gap: 14px;
+}
+
+
+#whatsapp_modal .whatsapp_link a:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    pointer-events: none;
+
+    border-radius: inherit;
+    background: rgba(190, 227, 208, .70);
+}
+
+
+#whatsapp_modal .whatsapp_link a:after
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: background .2s linear;
+    pointer-events: none;
+
+    border: 2px solid #025319;
+    border-radius: inherit;
+}
+
+
+#whatsapp_modal .whatsapp_link a > *
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+#whatsapp_modal .whatsapp_link img
+{
+    display: block;
+
+    width: 52px;
+    height: 52px;
+}
+
+
+#whatsapp_modal .whatsapp_link span
+{
+    display: block;
+
+    width: 100%;
+}
+
+
+#whatsapp_modal .whatsapp_link a:hover
+{
+    color: #fff;
+}
+
+#whatsapp_modal .whatsapp_link a:hover:after
+{
+    background: #025319;
+}
+
+
+#whatsapp_modal .qr_code img
+{
+    display: block;
+
+    width: 187px;
+    height: 187px;
 }
