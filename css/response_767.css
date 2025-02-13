@@ -67,8 +67,8 @@
     ------------*/
     .mob_header .cont
     {
-        align-items: flex-start;
         align-content: flex-start;
+        align-items: flex-start;
     }
 
 
@@ -228,13 +228,13 @@
     {
         font-size: 28px;
 
+        justify-content: center;
+
         width: 100%;
         height: 140px;
         padding: 20px;
 
         text-align: center;
-
-        justify-content: center;
     }
 
     .main_slider .slide img
@@ -463,15 +463,14 @@
         position: relative;
 
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         padding: 20px 0;
 
         border-top: 1px solid #ccc;
-
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
     }
 
     .cart_info table th + th,
@@ -531,7 +530,6 @@
     .cart_info table td.price:before,
     .cart_info table td.amount:before
     {
-        color: #000;
         font-size: 11px;
         font-weight: normal;
         line-height: 13px;
@@ -552,6 +550,7 @@
         text-transform: none;
 
         opacity: .4;
+        color: #000;
     }
 
 
@@ -573,9 +572,9 @@
 
     .cart_info .cart_total > *
     {
-        width: 100%;
-
         justify-content: center;
+
+        width: 100%;
     }
 
     .cart_info .cart_total .val
@@ -641,12 +640,12 @@
     {
         font-size: 22px;
 
+        justify-content: center;
+
         margin-top: 0;
         margin-bottom: 15px;
 
         text-align: center;
-
-        justify-content: center;
     }
 
     .checkout .form .submit_btn
@@ -696,6 +695,87 @@
     .vacancies .vacancy .name
     {
         font-size: 19px;
+    }
+
+
+
+    /*-----------------
+        Waste paper
+    -----------------*/
+    .waste_paper .data .title
+    {
+        font-size: 40px;
+    }
+
+
+    .waste_paper .data .price
+    {
+        font-size: 28px;
+        line-height: 40px;
+
+        margin-top: 12px;
+    }
+
+
+    .waste_paper .data .location
+    {
+        font-size: 15px;
+
+        margin-top: 24px;
+    }
+
+
+    .waste_paper .data .time
+    {
+        width: 268px;
+    }
+
+
+    .waste_paper .data .time span
+    {
+        font-size: 15px;
+
+        width: 60px;
+        min-width: 60px;
+    }
+
+
+    .waste_paper .data .time span + *
+    {
+        font-size: 15px;
+    }
+
+
+    .waste_paper .data .phone
+    {
+        font-size: 15px;
+    }
+
+
+    .waste_paper .data .phone a
+    {
+        font-size: 18px;
+    }
+
+
+    .waste_paper .order_form
+    {
+        padding: 27px;
+    }
+
+
+    .waste_paper .order_form .form .input
+    {
+        font-size: 15px;
+    }
+
+
+    .waste_paper .img
+    {
+        top: 40px;
+        right: -160px;
+
+        width: 400px;
     }
 
 

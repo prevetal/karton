@@ -207,14 +207,12 @@ button
 ::selection
 {
     color: #fff;
-
     background: #025319;
 }
 
 ::-moz-selection
 {
     color: #fff;
-
     background: #025319;
 }
 
@@ -256,16 +254,9 @@ html.custom_scroll ::-webkit-scrollbar-thumb
     background-color: #025319;
 }
 
-html.custom_scroll
-{
-    scrollbar-color: #025319 #ccc;
-    scrollbar-width: thin;
-}
-
 
 body
 {
-    color: var(--text_color);
     font: var(--font_size) var(--font_family);
 
     height: 100%;
@@ -274,6 +265,8 @@ body
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+
+    color: var(--text_color);
 
     -webkit-touch-callout: none;
 }
@@ -293,11 +286,11 @@ body.lock
 
 button
 {
-    color: var(--text_color);
     font: var(--font_size) var(--font_family);
 
     cursor: pointer;
 
+    color: var(--text_color);
     border: none;
     background: none;
 }
@@ -358,11 +351,10 @@ button
 .row
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -370,9 +362,9 @@ button
 .content_flex.row,
 .content_flex > .cont.row
 {
-    justify-content: space-between;
-    align-items: stretch;
     align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 .content_flex .content
@@ -505,6 +497,10 @@ button
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 47px;
     height: 46px;
@@ -512,11 +508,6 @@ button
     transition: background .2s linear;
 
     background: #bee3d0;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .buttonUp button > *
@@ -600,6 +591,10 @@ button
     left: 0;
 
     display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 100%;
@@ -608,11 +603,6 @@ button
     text-align: center;
 
     background: #fff;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .supports_error.show
@@ -628,21 +618,19 @@ button
 .tabs
 {
     display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 
     margin-bottom: 40px;
 
     border-bottom: 1px solid #e2e2e2;
-
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: nowrap;
 }
 
 
 .tabs button
 {
-    color: #000;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -654,6 +642,8 @@ button
     padding-bottom: 17px;
 
     transition: color .2s linear;
+
+    color: #000;
 }
 
 .tabs button:after
@@ -794,15 +784,14 @@ header .cont
 header .logo
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     max-width: 170px;
     margin-right: auto;
-
-    align-self: center;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .logo a,
@@ -842,9 +831,10 @@ header .info .row + .row
 
 header .phones
 {
-    color: #4a4a4a;
     font-size: 13px;
     line-height: 20px;
+
+    color: #4a4a4a;
 }
 
 header .phones > * br
@@ -860,9 +850,9 @@ header .phones .big
 
 header .phones a
 {
-    color: #4a4a4a;
-
     text-decoration: none;
+
+    color: #4a4a4a;
 }
 
 
@@ -870,19 +860,17 @@ header .phones a
 header .col_right
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: calc(100% - 450px);
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
 header .callback_btn
 {
-    color: #006f38;
     font-size: 13px;
     line-height: 40px;
 
@@ -890,20 +878,19 @@ header .callback_btn
 
     transition: .2s linear;
 
+    color: #006f38;
     background: url(../images/ic_callback_link.png) 0 0 no-repeat;
 }
 
 header .callback_btn:hover
 {
     color: #004619;
-
     background-position: 0 -40px;
 }
 
 
 header .order_btn
 {
-    color: #006f38;
     font-size: 13px;
     line-height: 40px;
 
@@ -911,20 +898,19 @@ header .order_btn
 
     transition: .2s linear;
 
+    color: #006f38;
     background: url(../images/ic_order_link.png) 0 0 no-repeat;
 }
 
 header .order_btn:hover
 {
     color: #004619;
-
     background-position: 0 -40px;
 }
 
 
 header .feedback_btn
 {
-    color: #006f38;
     font-size: 13px;
     line-height: 40px;
 
@@ -932,13 +918,13 @@ header .feedback_btn
 
     transition: .2s linear;
 
+    color: #006f38;
     background: url(../images/ic_feedback_link.png) 0 0 no-repeat;
 }
 
 header .feedback_btn:hover
 {
     color: #004619;
-
     background-position: 0 -40px;
 }
 
@@ -946,12 +932,12 @@ header .feedback_btn:hover
 
 header .location
 {
-    color: #4a4a4a;
     font-size: 13px;
     line-height: 20px;
 
     padding-left: 25px;
 
+    color: #4a4a4a;
     background: url(../images/ic_footer_adres.png) 0 0 no-repeat;
 }
 
@@ -959,12 +945,12 @@ header .location
 
 header .time
 {
-    color: #4a4a4a;
     font-size: 13px;
     line-height: 20px;
 
     padding-left: 30px;
 
+    color: #4a4a4a;
     background: url(../images/ic_time.png) 0 0 no-repeat;
 }
 
@@ -975,17 +961,15 @@ header .catalog
     position: static;
 
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
 header .catalog .link
 {
-    color: #000;
     font-size: 15px;
     font-weight: 500;
     line-height: 29px;
@@ -995,6 +979,8 @@ header .catalog .link
     transition: color .2s linear;
     text-decoration: none;
     text-transform: uppercase;
+
+    color: #000;
 }
 
 header .catalog .link:hover,
@@ -1007,16 +993,15 @@ header .catalog .link.active
 header .catalog .btn
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 18px;
     height: 18px;
     margin-bottom: 1px;
     margin-left: 8px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .catalog .btn span
@@ -1103,12 +1088,12 @@ header .catalog .btn.active span:after
 
 #catalog_modal .list a
 {
-    color: #fff;
-
     display: inline-block;
 
     vertical-align: top;
     text-decoration: none;
+
+    color: #fff;
 }
 
 #catalog_modal .list .bold a
@@ -1126,11 +1111,10 @@ header .catalog .btn.active span:after
 header .menu
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 header .menu .item
@@ -1145,7 +1129,6 @@ header .menu .item + .item
 
 header .menu .item > a
 {
-    color: #000;
     font-size: 15px;
     font-weight: 500;
     line-height: 29px;
@@ -1154,6 +1137,8 @@ header .menu .item > a
 
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #000;
 }
 
 header .menu .item:hover > a,
@@ -1235,7 +1220,6 @@ header .menu .item > a.touch_link + .sub_menu.show
 
 header .menu .sub_menu a
 {
-    color: #fff;
     font-size: 15px;
     font-weight: 500;
     line-height: 29px;
@@ -1244,6 +1228,8 @@ header .menu .sub_menu a
 
     transition: background .2s linear;
     text-decoration: none;
+
+    color: #fff;
 }
 
 header .menu .sub_menu a:hover,
@@ -1257,19 +1243,17 @@ header .menu .sub_menu a.active
 header .search
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 245px;
     max-width: 100%;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header .search .input
 {
-    color: #808080;
     font-family: var(--font_family);
     font-size: 12px;
 
@@ -1279,6 +1263,7 @@ header .search .input
     height: 29px;
     padding: 0 45px 0 12px;
 
+    color: #808080;
     border: none;
     background: #eaeaea;
 }
@@ -1311,19 +1296,19 @@ header .search .submit_btn:active
 
 header .cart_link
 {
-    color: #004619;
     font-weight: 500;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #004619;
 }
 
 header .cart_link img
@@ -1333,7 +1318,6 @@ header .cart_link img
 
 header .cart_link .count
 {
-    color: #fff;
     font-size: 11px;
     font-weight: 500;
     line-height: 19px;
@@ -1347,6 +1331,7 @@ header .cart_link .count
 
     text-align: center;
 
+    color: #fff;
     border-radius: 50%;
     background: #004619;
 }
@@ -1386,11 +1371,10 @@ header .cart_link .price small
 .mob_header .cont
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -1405,9 +1389,10 @@ header .cart_link .price small
 
 .mob_header .phones
 {
-    color: #4a4a4a;
     font-size: 13px;
     line-height: 20px;
+
+    color: #4a4a4a;
 }
 
 .mob_header .phones .big
@@ -1418,27 +1403,27 @@ header .cart_link .price small
 
 .mob_header .phones a
 {
-    color: #4a4a4a;
-
     text-decoration: none;
+
+    color: #4a4a4a;
 }
 
 
 .mob_header .cart_link
 {
-    color: #004619;
     font-weight: 500;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-decoration: none;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #004619;
 }
 
 .mob_header .cart_link img
@@ -1450,7 +1435,6 @@ header .cart_link .price small
 
 .mob_header .cart_link .count
 {
-    color: #fff;
     font-size: 11px;
     font-weight: 500;
     line-height: 19px;
@@ -1464,6 +1448,7 @@ header .cart_link .price small
 
     text-align: center;
 
+    color: #fff;
     border-radius: 50%;
     background: #004619;
 }
@@ -1572,13 +1557,12 @@ header.fixed .info .row + .row
 header.fixed .phones
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: 100%;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header.fixed .phones > *
@@ -1645,7 +1629,6 @@ aside
 
 aside .mob_cats_btn
 {
-    color: #fff;
     font-weight: 700;
     line-height: 44px;
 
@@ -1657,6 +1640,7 @@ aside .mob_cats_btn
     transition: background .2s linear;
     text-transform: uppercase;
 
+    color: #fff;
     background: #004619;
 }
 
@@ -1678,7 +1662,6 @@ aside .cats .cat + .cat
 
 aside .cats .main_cat
 {
-    color: #006f38;
     line-height: 18px;
 
     position: relative;
@@ -1689,6 +1672,8 @@ aside .cats .main_cat
 
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #006f38;
 }
 
 aside .cats .main_cat.sub_link
@@ -1761,7 +1746,6 @@ aside .cats .sub_cats
 
 aside .cats .sub_cats a
 {
-    color: #006f38;
     font-size: 12px;
     line-height: 14px;
 
@@ -1773,6 +1757,8 @@ aside .cats .sub_cats a
 
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #006f38;
 }
 
 aside .cats .sub_cats a:before
@@ -1801,7 +1787,6 @@ aside .cats .sub_cats a.active
 
 aside .mob_filter_btn
 {
-    color: #fff;
     font-weight: 700;
     line-height: 44px;
 
@@ -1813,6 +1798,7 @@ aside .mob_filter_btn
     transition: background .2s linear;
     text-transform: uppercase;
 
+    color: #fff;
     background: #004619;
 }
 
@@ -1843,7 +1829,6 @@ aside .filter .item + .item
 
 aside .filter .name
 {
-    color: #000;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -1851,16 +1836,17 @@ aside .filter .name
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 24px;
     padding-right: 32px;
 
     cursor: pointer;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #000;
 }
 
 aside .filter .name .arr
@@ -1906,13 +1892,12 @@ aside .filter .range
 aside .filter .range .row
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin-bottom: 16px;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 aside .filter .range .sep
@@ -1938,22 +1923,22 @@ aside .filter .range .input:focus
 
 aside .filter label
 {
-    color: #000;
     line-height: 17px;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     min-height: 23px;
     padding-left: 37px;
 
     cursor: pointer;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #000;
 }
 
 aside .filter label input
@@ -2001,9 +1986,9 @@ aside .filter label input:checked + .check:after
 
 aside .filter .submit
 {
-    padding: 0 15px 22px;
-
     justify-content: center;
+
+    padding: 0 15px 22px;
 }
 
 
@@ -2016,7 +2001,6 @@ aside .filter .submit_btn
 
 aside .filter .reset_btn
 {
-    color: #006f38;
     font-family: var(--font_family);
     font-size: 16px;
     font-weight: 500;
@@ -2029,6 +2013,7 @@ aside .filter .reset_btn
 
     vertical-align: top;
 
+    color: #006f38;
     border-bottom: 1px dashed #006f38;
 }
 
@@ -2050,20 +2035,20 @@ aside .filter .reset_btn
 
 .breadcrumbs
 {
-    color: #4a4a4a;
     font-size: 11px;
 
     padding-top: 20px;
 
+    color: #4a4a4a;
     border-top: 1px solid #e2e2e2;
 }
 
 .breadcrumbs a
 {
-    color: var(--text_color);
-
     transition: color .2s linear;
     text-decoration: none;
+
+    color: var(--text_color);
 }
 
 .breadcrumbs a:hover
@@ -2090,12 +2075,13 @@ aside .filter .reset_btn
 
 .page_title
 {
-    color: #000;
     font-size: var(--font_size_title);
     font-weight: normal;
     line-height: 40px;
 
     text-transform: uppercase;
+
+    color: #000;
 }
 
 
@@ -2106,31 +2092,31 @@ aside .filter .reset_btn
 .block_head
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 100%;
     margin-bottom: 25px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .block_head.center
 {
-    text-align: center;
-
     justify-content: center;
+
+    text-align: center;
 }
 
 .block_head .title
 {
-    color: #000;
     font-size: var(--font_size_title);
     font-weight: normal;
     line-height: calc(var(--font_size_title) + 4px);
 
     text-transform: uppercase;
+
+    color: #000;
 }
 
 
@@ -2203,11 +2189,12 @@ aside .filter .reset_btn
 
 .form .label
 {
-    color: #000;
     font-size: 12px;
     font-weight: 500;
 
     margin-bottom: 5px;
+
+    color: #000;
 }
 
 .form .label.big
@@ -2232,7 +2219,6 @@ aside .filter .reset_btn
 
 .form .input
 {
-    color: #000;
     font: 12px var(--font_family);
 
     display: block;
@@ -2243,6 +2229,7 @@ aside .filter .reset_btn
 
     transition: border-color .2s linear;
 
+    color: #000;
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
@@ -2250,7 +2237,6 @@ aside .filter .reset_btn
 
 .form textarea
 {
-    color: #000;
     font: 12px var(--font_family);
 
     display: block;
@@ -2262,6 +2248,7 @@ aside .filter .reset_btn
     resize: none;
     transition: border-color .2s linear;
 
+    color: #000;
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
@@ -2293,7 +2280,6 @@ aside .filter .reset_btn
 
 .form input[type=checkbox] + label
 {
-    color: #000;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
@@ -2308,6 +2294,8 @@ aside .filter .reset_btn
     cursor: pointer;
     text-align: left;
     vertical-align: middle;
+
+    color: #000;
 }
 
 .form input[type=checkbox] + label a
@@ -2345,7 +2333,6 @@ aside .filter .reset_btn
 
 .form .file label
 {
-    color: #00440c;
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
@@ -2357,6 +2344,7 @@ aside .filter .reset_btn
     cursor: pointer;
     text-align: center;
 
+    color: #00440c;
     background: #f7f7f7;
 }
 
@@ -2383,18 +2371,16 @@ aside .filter .reset_btn
 .form .submit
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     padding-top: 7px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .form .submit_btn
 {
-    color: #fff;
     font: 700 var(--font_size) var(--font_family);
 
     display: inline-block;
@@ -2407,6 +2393,7 @@ aside .filter .reset_btn
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     border: none;
     background: #004619;
 }
@@ -2419,12 +2406,13 @@ aside .filter .reset_btn
 
 .form .submit .exp
 {
-    color: #4a4a4a;
     font-size: 11px;
+
+    align-self: center;
 
     margin-left: auto;
 
-    align-self: center;
+    color: #4a4a4a;
 }
 
 
@@ -2458,19 +2446,21 @@ aside .filter .reset_btn
 
 .text_block h1
 {
-    color: #000;
     font-size: 32px;
     font-weight: normal;
     line-height: 40px;
+
+    color: #000;
 }
 
 
 .text_block h2
 {
-    color: #000;
     font-size: 28px;
     font-weight: normal;
     line-height: 30px;
+
+    color: #000;
 }
 
 .text_block h1 + h2
@@ -2481,10 +2471,11 @@ aside .filter .reset_btn
 
 .text_block h3
 {
-    color: #000;
     font-size: 25px;
     font-weight: normal;
     line-height: 27px;
+
+    color: #000;
 }
 
 .text_block h1 + h3,
@@ -2496,10 +2487,11 @@ aside .filter .reset_btn
 
 .text_block h4
 {
-    color: #000;
     font-size: 22px;
     font-weight: normal;
     line-height: 24px;
+
+    color: #000;
 }
 
 .text_block h1 + h4,
@@ -2512,10 +2504,11 @@ aside .filter .reset_btn
 
 .text_block h5
 {
-    color: #000;
     font-size: 20px;
     font-weight: normal;
     line-height: 22px;
+
+    color: #000;
 }
 
 .text_block h1 + h5,
@@ -2529,12 +2522,13 @@ aside .filter .reset_btn
 
 .text_block h6
 {
-    color: #000;
     font-size: 18px;
     font-weight: normal;
     line-height: 20px;
 
     margin-bottom: 30px;
+
+    color: #000;
 }
 
 .text_block h1 + h6,
@@ -2646,11 +2640,10 @@ aside .filter .reset_btn
 .text_block .pluses > *
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .text_block .pluses > * + *
@@ -2672,9 +2665,9 @@ aside .filter .reset_btn
 
 .text_block .pluses .icon + *
 {
-    width: calc(100% - 100px);
-
     align-self: center;
+
+    width: calc(100% - 100px);
 }
 
 
@@ -2713,9 +2706,9 @@ aside .filter .reset_btn
 
 .text_block a
 {
-    color: #006f38;
-
     text-decoration: none;
+
+    color: #006f38;
 }
 
 .text_block a:hover
@@ -2744,38 +2737,36 @@ aside .filter .reset_btn
 
     display: flex;
     overflow: hidden;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     min-height: 501px;
 
     text-decoration: none;
-
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .main_slider .slide .title
 {
-    color: #fff;
     font-size: 50px;
 
     position: relative;
     z-index: 5;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: 460px;
     max-width: 100%;
     height: 267px;
     padding-left: 70px;
 
+    color: #fff;
     background: #025319;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .main_slider .slide img
@@ -2795,9 +2786,9 @@ aside .filter .reset_btn
 
 .main_slider .thumbs
 {
-    margin-top: 20px;
-
     flex-wrap: nowrap;
+
+    margin-top: 20px;
 }
 
 .main_slider .thumbs > *
@@ -2834,11 +2825,12 @@ aside .filter .reset_btn
 ----------------*/
 .advantages .block_title
 {
-    color: #000;
     font-size: 25px;
     line-height: 31px;
 
     margin-bottom: 20px;
+
+    color: #000;
 }
 
 
@@ -2853,10 +2845,10 @@ aside .filter .reset_btn
 
 .advantages .row
 {
+    justify-content: center;
+
     margin-bottom: -20px;
     margin-left: -20px;
-
-    justify-content: center;
 }
 
 .advantages .row > *
@@ -2869,24 +2861,24 @@ aside .filter .reset_btn
 
 .advantages .item
 {
-    color: #000;
     font-weight: 500;
     line-height: 18px;
 
     text-align: center;
+
+    color: #000;
 }
 
 .advantages .item .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 120px;
     margin-bottom: 4px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .advantages .item .icon img
@@ -2921,14 +2913,13 @@ aside .filter .reset_btn
 .products .product .thumb
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 170px;
     margin-bottom: 15px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .products .product .thumb img
@@ -2942,24 +2933,25 @@ aside .filter .reset_btn
 
 .products .product .name
 {
-    color: #0f4f1a;
     font-size: 12px;
     font-weight: 500;
     line-height: 24px;
 
+    flex: 1 0 auto;
+
     text-transform: uppercase;
 
-    flex: 1 0 auto;
+    color: #0f4f1a;
 }
 
 .products .product .name a
 {
-    color: #0f4f1a;
-
     display: inline-block;
 
     vertical-align: top;
     text-decoration: none;
+
+    color: #0f4f1a;
 }
 
 .products .product .thumb:hover ~ .name a,
@@ -2970,7 +2962,6 @@ aside .filter .reset_btn
 
 .products .product .order_btn
 {
-    color: #fff;
     font-weight: 700;
     line-height: 38px;
 
@@ -2983,6 +2974,7 @@ aside .filter .reset_btn
     transition: background .2s linear;
     text-transform: uppercase;
 
+    color: #fff;
     background: #004619;
 }
 
@@ -3001,16 +2993,15 @@ aside .filter .reset_btn
 .products .list .product
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
     padding: 20px;
 
     text-align: left;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: nowrap;
 }
 
 .products .list .product .thumb
@@ -3044,11 +3035,10 @@ aside .filter .reset_btn
 .products .list .product .size > *
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
 .products .list .product .size > * + *
@@ -3082,13 +3072,14 @@ aside .filter .reset_btn
 .products .list .product .price b,
 .products .list .product .material b
 {
-    color: #004619;
     font-weight: 500;
     line-height: 18px;
 
     display: block;
 
     margin-top: 7px;
+
+    color: #004619;
 }
 
 .products .list .product .order_btn
@@ -3103,11 +3094,11 @@ aside .filter .reset_btn
 ---------------*/
 .cats_wall .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     padding-bottom: 1px;
     padding-left: 1px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .cats_wall .row > *
@@ -3120,7 +3111,6 @@ aside .filter .reset_btn
 
 .cats_wall .cat
 {
-    color: #006f38;
     font-size: 18px;
     line-height: 23px;
 
@@ -3135,6 +3125,7 @@ aside .filter .reset_btn
     text-align: center;
     text-decoration: none;
 
+    color: #006f38;
     border: 1px solid #e2e2e2;
 }
 
@@ -3142,14 +3133,13 @@ aside .filter .reset_btn
 .cats_wall .cat .thumb
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 185px;
     margin-bottom: 5px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .cats_wall .cat .thumb img
@@ -3189,23 +3179,23 @@ aside .filter .reset_btn
 
 .steps .item
 {
-    color: #000;
     line-height: 22px;
 
     text-align: center;
+
+    color: #000;
 }
 
 .steps .item .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 68px;
     margin-bottom: 12px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .steps .item .icon img
@@ -3239,14 +3229,13 @@ aside .filter .reset_btn
 .articles .article .thumb
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 170px;
     margin-bottom: 15px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .articles .article .thumb img
@@ -3260,21 +3249,22 @@ aside .filter .reset_btn
 
 .articles .article .name
 {
-    color: #0f4f1a;
     font-size: 16px;
     line-height: 24px;
 
     flex: 1 0 auto;
+
+    color: #0f4f1a;
 }
 
 .articles .article .name a
 {
-    color: #0f4f1a;
-
     display: inline-block;
 
     vertical-align: top;
     text-decoration: none;
+
+    color: #0f4f1a;
 }
 
 .articles .article .thumb:hover ~ .name a,
@@ -3295,7 +3285,6 @@ aside .filter .reset_btn
 
 .articles .article .details
 {
-    color: #0f4f1a;
     line-height: 22px;
 
     display: inline-block;
@@ -3304,6 +3293,8 @@ aside .filter .reset_btn
 
     vertical-align: top;
     text-decoration: none;
+
+    color: #0f4f1a;
 }
 
 .articles .article .details:hover
@@ -3321,18 +3312,17 @@ aside .filter .reset_btn
 .articles .list .article
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     padding: 20px;
 
     text-align: left;
 
     border: 1px solid #e2e2e2;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .articles .list .article .thumb
@@ -3374,9 +3364,9 @@ aside .filter .reset_btn
 
 .contacts_info .info a
 {
-    color: #006f38;
-
     text-decoration: none;
+
+    color: #006f38;
 }
 
 .contacts_info .info a:hover
@@ -3426,7 +3416,6 @@ aside .filter .reset_btn
 
 .contacts_info .print .btn
 {
-    color: #fff;
     font-weight: 700;
     line-height: 38px;
 
@@ -3439,6 +3428,7 @@ aside .filter .reset_btn
     vertical-align: top;
     text-transform: uppercase;
 
+    color: #fff;
     background: #004619;
 }
 
@@ -3477,7 +3467,6 @@ aside .filter .reset_btn
 
 .sub_categories .row a
 {
-    color: #006f38;
     font-size: 15px;
     line-height: 19px;
 
@@ -3488,6 +3477,7 @@ aside .filter .reset_btn
     transition: border-color .2s linear, box-shadow .2s linear;
     text-decoration: none;
 
+    color: #006f38;
     border: 1px solid #e2e2e2;
 }
 
@@ -3505,7 +3495,6 @@ aside .filter .reset_btn
 
 .sub_categories .spoler_btn
 {
-    color: #006f38;
     font-size: 15px;
     font-weight: 500;
 
@@ -3514,6 +3503,8 @@ aside .filter .reset_btn
     margin: 20px auto 0;
 
     text-decoration: underline;
+
+    color: #006f38;
 }
 
 .sub_categories .spoler_btn span + span,
@@ -3534,7 +3525,6 @@ aside .filter .reset_btn
 ------------------*/
 .product_info .articul
 {
-    color: #444;
     font-family: var(--font_family2);
     font-size: 15px;
     line-height: 19px;
@@ -3545,14 +3535,15 @@ aside .filter .reset_btn
 
     vertical-align: top;
 
+    color: #444;
     background: #f3f3f3;
 }
 
 
 .product_info .row
 {
-    align-items: stretch;
     align-content: stretch;
+    align-items: stretch;
 }
 
 
@@ -3572,15 +3563,14 @@ aside .filter .reset_btn
     position: absolute;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 100%;
     padding: 20px 20px 80px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_info .image a:after
@@ -3644,28 +3634,26 @@ aside .filter .reset_btn
 
 .product_info .info .size_price .label
 {
-    color: #808080;
-
     margin-bottom: 9px;
+
+    color: #808080;
 }
 
 
 .product_info .info .size_price .item
 {
-    color: #000;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     padding: 2px 13px 2px 9px;
 
     white-space: nowrap;
 
+    color: #000;
     background: #f3f3f3;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_info .info .size_price .item + .item
@@ -3699,18 +3687,18 @@ aside .filter .reset_btn
 
 .product_info .info .size_price .and_more
 {
-    color: #808080;
-
     width: 51px;
     margin-left: 5px;
+
+    color: #808080;
 }
 
 
 .product_info .info .size_price .points
 {
-    color: #808080;
-
     margin-left: 8px;
+
+    color: #808080;
 }
 
 
@@ -3732,28 +3720,28 @@ aside .filter .reset_btn
 
 .product_info .info .delivery
 {
-    color: #444;
     font-family: var(--font_family2);
     font-size: 15px;
     font-weight: 500;
     line-height: 19px;
 
+    align-self: flex-end;
+
     width: 276px;
     max-width: 100%;
     margin-left: auto;
 
-    align-self: flex-end;
+    color: #444;
 }
 
 
 .product_info .info .delivery > *
 {
     display: flex;
-
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .product_info .info .delivery > * + *
@@ -3765,13 +3753,12 @@ aside .filter .reset_btn
 .product_info .info .delivery .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     width: 43px;
-
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .product_info .info .delivery .icon img
@@ -3791,31 +3778,30 @@ aside .filter .reset_btn
 
 .product_info .info .payment
 {
-    color: #444;
     font-family: var(--font_family2);
     font-size: 15px;
     line-height: 19px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: 100%;
     margin-top: 44px;
 
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #444;
 }
 
 
 .product_info .info .payment > *
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -3836,31 +3822,33 @@ aside .filter .reset_btn
 
 .product_info .info .buy
 {
-    background: #f2f5f3;
-
     justify-content: space-between;
+
+    background: #f2f5f3;
 }
 
 
 .product_info .info .buy .label
 {
-    color: #444;
     font-family: var(--font_family2);
     font-size: 15px;
     font-weight: 700;
     line-height: 19px;
 
     margin-bottom: 12px;
+
+    color: #444;
 }
 
 
 .product_info .info .buy .price
 {
-    color: #004619;
     font-size: 21px;
     line-height: 38px;
 
     white-space: nowrap;
+
+    color: #004619;
 }
 
 .product_info .info .buy .price.total
@@ -3926,7 +3914,6 @@ aside .filter .reset_btn
 
 .product_info .info .amount .input
 {
-    color: #000;
     font-family: var(--font_family2);
     font-size: 15px;
     font-weight: 500;
@@ -3939,6 +3926,7 @@ aside .filter .reset_btn
 
     text-align: center;
 
+    color: #000;
     border: 1px solid #e2e2e2;
     background: #fff;
 }
@@ -3946,13 +3934,13 @@ aside .filter .reset_btn
 
 .product_info .info .buy .buy_btn
 {
-    color: #fff;
     font-family: var(--font_family2);
     font-size: 14px;
     font-weight: 900;
     line-height: 18px;
 
     display: block;
+    align-self: flex-end;
 
     width: 163px;
     height: 46px;
@@ -3961,9 +3949,8 @@ aside .filter .reset_btn
     letter-spacing: .04em;
     text-transform: uppercase;
 
+    color: #fff;
     background: #004619;
-
-    align-self: flex-end;
 }
 
 .product_info .info .buy .buy_btn:hover
@@ -3975,28 +3962,28 @@ aside .filter .reset_btn
 
 .product_info .info .btns
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 .product_info .info .btns .btn
 {
-    color: #004619;
     font-family: var(--font_family2);
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     text-transform: uppercase;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #004619;
 }
 
 .product_info .info .btns .btn img
@@ -4010,13 +3997,13 @@ aside .filter .reset_btn
 
 .product_info .info .quike_buy_btn
 {
-    color: #fff;
     font-family: var(--font_family2);
     font-size: 13px;
     font-weight: 500;
     line-height: 16px;
 
     display: block;
+    align-self: flex-end;
 
     width: 163px;
     height: 38px;
@@ -4025,9 +4012,8 @@ aside .filter .reset_btn
     letter-spacing: .04em;
     text-transform: uppercase;
 
+    color: #fff;
     background: #004619;
-
-    align-self: flex-end;
 }
 
 .product_info .info .quike_buy_btn:hover
@@ -4047,13 +4033,12 @@ aside .filter .reset_btn
 .product_features
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-left: -72px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .product_features > .col
@@ -4064,29 +4049,30 @@ aside .filter .reset_btn
 
 .product_features .title
 {
-    color: #000;
     font-family: var(--font_family2);
     font-size: 15px;
     font-weight: 700;
     line-height: 19px;
 
     margin-bottom: 9px;
+
+    color: #000;
 }
 
 
 .product_features .items > *
 {
-    color: #808080;
     font-family: var(--font_family2);
     font-size: 15px;
     line-height: 19px;
 
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
+
+    color: #808080;
 }
 
 .product_features .items > * + *
@@ -4103,10 +4089,11 @@ aside .filter .reset_btn
 
 .product_features .val
 {
-    color: #000;
     font-weight: 700;
 
     white-space: nowrap;
+
+    color: #000;
 }
 
 
@@ -4114,6 +4101,10 @@ aside .filter .reset_btn
 .products_examples .item
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 170px;
     padding: 15px;
@@ -4121,11 +4112,6 @@ aside .filter .reset_btn
     transition: .2s linear;
 
     border: 1px solid #aaa;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .products_examples .item img
@@ -4149,11 +4135,12 @@ aside .filter .reset_btn
 ---------------*/
 .cart_info .block_title
 {
-    color: #000;
     font-size: 24px;
     line-height: 24px;
 
     margin-bottom: -20px;
+
+    color: #000;
 }
 
 
@@ -4168,7 +4155,6 @@ aside .filter .reset_btn
 
 .cart_info table th
 {
-    color: #000;
     font-size: 16px;
     font-weight: 500;
 
@@ -4176,6 +4162,7 @@ aside .filter .reset_btn
 
     text-align: center;
 
+    color: #000;
     border-bottom: 1px solid #ccc;
 }
 
@@ -4212,13 +4199,12 @@ aside .filter .reset_btn
 .cart_info table td.thumb a
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 73px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .cart_info table td.thumb img
@@ -4241,8 +4227,6 @@ aside .filter .reset_btn
 
 .cart_info table td.name a
 {
-    color: #000;
-
     display: inline-block;
 
     width: 325px;
@@ -4251,6 +4235,8 @@ aside .filter .reset_btn
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: #000;
 }
 
 .cart_info table td.name a:hover
@@ -4261,7 +4247,6 @@ aside .filter .reset_btn
 
 .cart_info table td.price
 {
-    color: #000;
     font-size: 24px;
     font-weight: 500;
     line-height: 38px;
@@ -4272,6 +4257,8 @@ aside .filter .reset_btn
     table-layout: fixed;
 
     white-space: nowrap;
+
+    color: #000;
 }
 
 .cart_info table td.price small
@@ -4350,7 +4337,6 @@ aside .filter .reset_btn
 
 .cart_info table td.amount .input
 {
-    color: #000;
     font-family: var(--font_family);
     font-size: 16px;
     font-weight: 500;
@@ -4363,6 +4349,7 @@ aside .filter .reset_btn
 
     text-align: center;
 
+    color: #000;
     border: 1px solid #e2e2e2;
     background: none;
 }
@@ -4429,41 +4416,40 @@ aside .filter .reset_btn
 
 .cart_info .cart_total
 {
-    color: #000;
     font-size: 30px;
     font-weight: 700;
 
     display: flex;
-
-    justify-content: flex-end;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-end;
+
+    color: #000;
 }
 
 .cart_info .cart_total > *
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     padding-top: 17px;
 
     border-top: 3px solid #004619;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .cart_info .cart_total .val
 {
-    color: #063;
-
     width: 242px;
     max-width: 100%;
     margin-left: 13px;
 
     white-space: nowrap;
+
+    color: #063;
 }
 
 
@@ -4473,7 +4459,6 @@ aside .filter .reset_btn
 --------------*/
 .checkout .block_title
 {
-    color: #000;
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
@@ -4481,6 +4466,7 @@ aside .filter .reset_btn
     margin-bottom: 28px;
     padding-bottom: 10px;
 
+    color: #000;
     border-bottom: 3px solid #004619;
 }
 
@@ -4499,13 +4485,12 @@ aside .filter .reset_btn
 .checkout .form .type .field
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-left: -86px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .checkout .form .type .field > *
@@ -4522,13 +4507,16 @@ aside .filter .reset_btn
 
 .checkout .form input[type=radio] + label
 {
-    color: #000;
     font-size: 19px;
     font-weight: 700;
 
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     min-height: 66px;
     padding: 10px 20px 10px 47px;
@@ -4537,13 +4525,9 @@ aside .filter .reset_btn
     transition: .2s linear;
     text-align: center;
 
+    color: #000;
     border: 2px solid #dedede;
     border-radius: 3px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .checkout .form input[type=radio] + label:before
@@ -4590,7 +4574,6 @@ aside .filter .reset_btn
 .checkout .form input[type=radio]:checked + label
 {
     color: #004619;
-
     border-color: #5c896c;
 }
 
@@ -4644,19 +4627,21 @@ aside .filter .reset_btn
 
 .checkout .form .delivery_method .adres
 {
-    color: #000;
     font-size: 15px;
     font-weight: 500;
     line-height: 23px;
+
+    color: #000;
 }
 
 .checkout .form .delivery_method .exp
 {
-    color: #000;
     font-size: 13px;
     line-height: 19px;
 
     margin-bottom: 22px;
+
+    color: #000;
 }
 
 
@@ -4689,7 +4674,6 @@ aside .filter .reset_btn
 
 .checkout .form .agree
 {
-    color: #000;
     font-size: 13px;
     line-height: 19px;
 
@@ -4697,13 +4681,15 @@ aside .filter .reset_btn
     max-width: 100%;
     margin-top: 15px;
     margin-left: auto;
+
+    color: #000;
 }
 
 .checkout .form .agree a
 {
-    color: #004619;
-
     text-decoration: none;
+
+    color: #004619;
 }
 
 .checkout .form .agree a:hover
@@ -4714,27 +4700,27 @@ aside .filter .reset_btn
 
 .checkout .checkout_total
 {
-    color: #000;
     font-size: 30px;
     font-weight: 700;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     width: 100%;
     margin-top: 27px;
     margin-bottom: 20px;
 
-    justify-content: flex-end;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    color: #000;
 }
 
 .checkout .checkout_total .val
 {
-    color: #063;
-
     margin-left: 13px;
+
+    color: #063;
 }
 
 
@@ -4745,13 +4731,12 @@ aside .filter .reset_btn
 .pagination
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 30px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .pagination.center
@@ -4766,7 +4751,6 @@ aside .filter .reset_btn
 
 .pagination a
 {
-    color: #4a4a4a;
     font-size: 12px;
     line-height: 44px;
 
@@ -4782,6 +4766,7 @@ aside .filter .reset_btn
     text-align: center;
     text-decoration: none;
 
+    color: #4a4a4a;
     border: 1px solid #e2e2e2;
 }
 
@@ -4792,19 +4777,17 @@ aside .filter .reset_btn
 
 .pagination a:hover
 {
-    color: #006f38;
-
     z-index: 3;
 
+    color: #006f38;
     border-color: #006f38;
 }
 
 .pagination a.active
 {
-    color: #006f38;
-
     z-index: 2;
 
+    color: #006f38;
     border-color: #e2e2e2;
     background: #e2e2e2;
 }
@@ -4816,14 +4799,13 @@ aside .filter .reset_btn
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     border-color: #00440c;
     background: #00440c;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .pagination .prev
@@ -4892,11 +4874,11 @@ aside .filter .reset_btn
 ---------------*/
 .vacancies .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -30px;
     margin-left: -30px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .vacancies .row > *
@@ -4917,7 +4899,6 @@ aside .filter .reset_btn
 
 .vacancies .vacancy .name
 {
-    color: #00440c;
     font-size: 21px;
     font-weight: 700;
     line-height: 22px;
@@ -4925,6 +4906,7 @@ aside .filter .reset_btn
     margin-bottom: 13px;
     padding-bottom: 14px;
 
+    color: #00440c;
     border-bottom: 1px dashed #00440c;
 }
 
@@ -4937,16 +4919,16 @@ aside .filter .reset_btn
 
 .vacancies .vacancy .features > *
 {
-    color: #808080;
     font-size: 15px;
     line-height: 22px;
 
     display: flex;
-
-    justify-content: space-between;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: nowrap;
+    justify-content: space-between;
+
+    color: #808080;
 }
 
 .vacancies .vacancy .features > * + *
@@ -4957,40 +4939,40 @@ aside .filter .reset_btn
 
 .vacancies .vacancy .features .val
 {
-    color: #292929;
     font-weight: 700;
 
     margin-left: 20px;
 
     text-align: right;
+
+    color: #292929;
 }
 
 
 .vacancies .vacancy .details
 {
-    color: #00440c;
     font-size: 15px;
     font-weight: 700;
     line-height: 22px;
 
     margin-top: 28px;
+
+    color: #00440c;
 }
 
 .vacancies .vacancy .details a
 {
-    color: currentColor;
-
     padding-bottom: 3px;
 
     text-decoration: none;
 
+    color: currentColor;
     border-bottom: 1px dashed #00440c;
 }
 
 
 .vacancies .vacancy .btn
 {
-    color: #fff;
     font-size: 17px;
     font-weight: 700;
     line-height: 22px;
@@ -5004,6 +4986,7 @@ aside .filter .reset_btn
     transition: background .2s linear;
     text-transform: uppercase;
 
+    color: #fff;
     background: #00440c;
 }
 
@@ -5014,22 +4997,341 @@ aside .filter .reset_btn
 
 
 
+/*-----------------
+    Waste paper
+-----------------*/
+.waste_paper
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.waste_paper .img
+{
+    position: absolute;
+    z-index: 1;
+    top: -9px;
+    right: 50%;
+
+    display: block;
+
+    margin-right: -416px;
+
+    pointer-events: none;
+}
+
+
+.waste_paper .data
+{
+    position: relative;
+    z-index: 3;
+
+    width: 400px;
+    max-width: 100%;
+}
+
+
+.waste_paper .data .title
+{
+    font-family: var(--font_family2);
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 100%;
+
+    text-transform: uppercase;
+
+    color: #025319;
+}
+
+
+.waste_paper .data .price
+{
+    font-family: var(--font_family2);
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 65px;
+
+    display: inline-block;
+
+    margin-top: 22px;
+    padding: 0 20px;
+
+    vertical-align: top;
+    white-space: nowrap;
+
+    color: #fff;
+    background: #025319;
+}
+
+
+.waste_paper .data .location
+{
+    font-family: var(--font_family2);
+    font-size: 19px;
+    font-weight: 500;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 37px;
+
+    color: #000;
+}
+
+
+.waste_paper .data .location .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 23px;
+}
+
+
+.waste_paper .data .time
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    width: 372px;
+    max-width: 100%;
+    margin-top: 17px;
+    padding: 20px 23px;
+
+    border: 1px solid #025319;
+}
+
+
+.waste_paper .data .time span
+{
+    font-family: var(--font_family2);
+    font-size: 19px;
+    font-weight: 500;
+
+    width: 91px;
+    min-width: 91px;
+    margin-right: 7px;
+
+    color: #000;
+}
+
+
+.waste_paper .data .time span + *
+{
+    font-size: 19px;
+    line-height: 140%;
+
+    width: 100%;
+
+    color: #000;
+}
+
+
+.waste_paper .data .time .grey
+{
+    color: #767676;
+}
+
+
+.waste_paper .data .location span
+{
+    width: calc(100% - 35px);
+}
+
+
+.waste_paper .data .phone
+{
+    font-family: var(--font_family2);
+    font-size: 19px;
+    font-weight: 500;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 15px;
+
+    color: #000;
+}
+
+.waste_paper .data .phone + .phone
+{
+    margin-top: 12px;
+}
+
+
+.waste_paper .data .phone .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 23px;
+}
+
+.waste_paper .data .phone .icon2
+{
+    width: 16px;
+    height: 21px;
+}
+
+
+.waste_paper .data .phone div
+{
+    width: calc(100% - 24px);
+}
+
+
+.waste_paper .data .phone span
+{
+    width: 47px;
+    margin-right: 4px;
+}
+
+
+.waste_paper .data .phone a
+{
+    font-size: 24px;
+    font-weight: 700;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: #025319;
+}
+
+
+.waste_paper .order_form
+{
+    position: relative;
+    z-index: 3;
+
+    width: 450px;
+    max-width: 100%;
+    margin-left: auto;
+    padding: 33px 49px 57px;
+
+    border: 1px solid #a8cebb;
+    background: rgba(255,255,255,.96);
+}
+
+
+.waste_paper .order_form .title
+{
+    font-family: var(--font_family2);
+    font-size: 24px;
+    font-weight: 500;
+
+    margin-bottom: 23px;
+
+    text-align: center;
+
+    color: #025319;
+}
+
+
+.waste_paper .order_form .form .label
+{
+    font-family: var(--font_family2);
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+
+.waste_paper .order_form .form .required
+{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.waste_paper .order_form .form .input
+{
+    font-family: var(--font_family2);
+    font-size: 16px;
+
+    height: 44px;
+}
+
+
+.waste_paper .order_form .form input[type=checkbox] + label
+{
+    font-family: var(--font_family2);
+    font-size: 13px;
+}
+
+
+.waste_paper .order_form .form input[type=checkbox] + label .required
+{
+    font-weight: 400;
+
+    color: #006f38;
+}
+
+
+.waste_paper .order_form .form .submit_btn
+{
+    font-family: var(--font_family2);
+    font-size: 16px;
+    font-weight: 500;
+
+    width: 178px;
+    height: 44px;
+}
+
+
+.waste_paper .order_form .form .submit .exp
+{
+    font-family: var(--font_family2);
+    font-size: 13px;
+
+    align-self: flex-start;
+}
+
+
+.waste_paper .map
+{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+
+    background: #ddd;
+}
+
+
+.waste_paper .text_block
+{
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
 /*------------
     Footer
 ------------*/
 footer .row
 {
+    justify-content: space-between;
+
     padding: 30px 0;
 
     border-top: 3px solid #004619;
-
-    justify-content: space-between;
 }
 
 
 footer .title
 {
-    color: #000;
     font-size: 12px;
     font-weight: 700;
     line-height: 18px;
@@ -5037,6 +5339,8 @@ footer .title
     margin-bottom: 15px;
 
     text-transform: uppercase;
+
+    color: #000;
 }
 
 
@@ -5112,14 +5416,14 @@ footer .creator
 
 footer .creator a
 {
-    color: #808080;
-
     position: relative;
 
     display: inline-block;
 
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #808080;
 }
 
 footer .creator a:after
@@ -5152,7 +5456,6 @@ footer .links .list > * + *
 
 footer .links .list a
 {
-    color: #4a4a4a;
     font-size: 12px;
 
     display: inline-block;
@@ -5160,6 +5463,8 @@ footer .links .list a
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: #4a4a4a;
 }
 
 footer .links .list a:hover
@@ -5176,45 +5481,45 @@ footer .contacts
 
 footer .contacts .phone
 {
-    color: #4a4a4a;
     font-size: 12px;
     line-height: 19px;
 
     padding-left: 27px;
 
+    color: #4a4a4a;
     background: url(../images/ic_footer_phone.png) 0 0 no-repeat;
 }
 
 footer .contacts .phone a
 {
-    color: #4a4a4a;
-
     display: inline-block;
 
     vertical-align: top;
     white-space: nowrap;
     text-decoration: none;
+
+    color: #4a4a4a;
 }
 
 
 footer .contacts .email
 {
-    color: #4a4a4a;
     font-size: 12px;
     line-height: 19px;
 
     margin-top: 20px;
     padding-left: 27px;
 
+    color: #4a4a4a;
     background: url(../images/ic_footer_email.png) 0 0 no-repeat;
 }
 
 footer .contacts .email a
 {
-    color: #006f38;
-
     transition: color .2s linear;
     text-decoration: none;
+
+    color: #006f38;
 }
 
 footer .contacts .email a:hover
@@ -5225,13 +5530,13 @@ footer .contacts .email a:hover
 
 footer .contacts .adres
 {
-    color: #4a4a4a;
     font-size: 12px;
     line-height: 18px;
 
     margin-top: 20px;
     padding-left: 27px;
 
+    color: #4a4a4a;
     background: url(../images/ic_footer_adres.png) 0 0 no-repeat;
 }
 
@@ -5266,11 +5571,12 @@ footer .map
 
 .modal_title
 {
-    color: #000;
     font-size: 18px;
     font-weight: 700;
 
     margin-bottom: 20px;
+
+    color: #000;
 }
 
 

@@ -83,6 +83,10 @@
     {
         display: flex;
         overflow: auto;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         height: 100%;
         min-height: -moz-available;
@@ -90,11 +94,6 @@
         min-height:         fill-available;
         padding: 0;
         padding-bottom: 20px;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
     header .mob_scroll > *
@@ -511,14 +510,13 @@
     .product_info .info .payment .icon
     {
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
 
         width: 32px;
         height: 32px;
-
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
     }
 
     .product_info .info .payment .icon + *
@@ -733,6 +731,96 @@
     .vacancies .row > *
     {
         width: calc(50% - 24px);
+    }
+
+
+
+    /*-----------------
+        Waste paper
+    -----------------*/
+    .waste_paper .data
+    {
+        width: 100%;
+    }
+
+
+    .waste_paper .data .title
+    {
+        font-size: 44px;
+    }
+
+
+    .waste_paper .data .price
+    {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+
+    .waste_paper .data .location
+    {
+        font-size: 16px;
+
+        margin-top: 28px;
+    }
+
+
+    .waste_paper .data .time
+    {
+        width: 284px;
+        padding: 11px 15px;
+    }
+
+
+    .waste_paper .data .time span
+    {
+        font-size: 16px;
+
+        width: 68px;
+        min-width: 68px;
+    }
+
+
+    .waste_paper .data .time span + *
+    {
+        font-size: 16px;
+    }
+
+
+    .waste_paper .data .phone
+    {
+        font-size: 16px;
+    }
+
+
+    .waste_paper .data .phone a
+    {
+        font-size: 20px;
+    }
+
+
+    .waste_paper .order_form
+    {
+        width: 100%;
+        margin-top: 40px;
+        padding: 39px;
+    }
+
+
+    .waste_paper .img
+    {
+        top: 0;
+        right: -100px;
+
+        width: 600px;
+        min-width: 200px;
+        margin-right: 0;
+    }
+
+
+    .waste_paper .map
+    {
+        height: 360px;
     }
 
 

@@ -28,8 +28,8 @@
 
     .mob_header .cont
     {
-        align-items: center;
         align-content: center;
+        align-items: center;
     }
 
 
@@ -536,6 +536,49 @@
 
 
 
+    /*-----------------
+        Waste paper
+    -----------------*/
+    .waste_paper .data .title
+    {
+        font-size: 36px;
+    }
+
+
+    .waste_paper .data .price
+    {
+        font-size: 26px;
+    }
+
+
+    .waste_paper .order_form
+    {
+        padding: 23px;
+    }
+
+
+    .waste_paper .order_form .form .label
+    {
+        font-size: 14px;
+    }
+
+
+    .waste_paper .order_form .form .submit_btn
+    {
+        width: 132px;
+    }
+
+
+    .waste_paper .img
+    {
+        top: 240px;
+        right: -148px;
+
+        width: 320px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -544,16 +587,15 @@
         position: relative;
 
         display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        order: 3;
 
         width: 100%;
         max-width: none;
         margin-top: 20px;
-
-        justify-content: space-between;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        order: 3;
     }
 
 
@@ -575,14 +617,13 @@
     footer .contacts
     {
         display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         width: 100%;
         max-width: none;
-
-        justify-content: space-between;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
     footer .contacts .email
